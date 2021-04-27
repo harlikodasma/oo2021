@@ -7,12 +7,10 @@ public class Pendel {
         while(true) {
             System.out.println("Tik");
             Thread.sleep(vonge);
-            //ratas.edasi();
-
+            ratas.edasi();
             System.out.println("Tak");
             Thread.sleep(vonge);
-            //ratas.edasi();
-            
+            ratas.edasi();
         }
     }
 }

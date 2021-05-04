@@ -1,0 +1,3 @@
+interface Sisend {
+    boolean kysi();
+}

@@ -1,0 +1,25 @@
+Java Listi loomine ja kasutamine
+
+* Listi loomisel on vaja enne importida ArrayListi puhul kas java.util.ArrayList või lihtsalt java.util.*
+* Näide ArrayListi loomisest: ArrayList<String> autod = new ArrayList<String>();
+* Listi elemendi lisamine: autod.get(indeks);
+* Listi elemendi muutmine kindla kohaga indeksil: autod.set(indeks, uusVäärtus);
+* Listist elemendi eemaldamine: autod.remove(indeks);
+* Listi tühjendamine: autod.clear();
+* Samuti saab liste sorteerida, forEach loopiga läbi käia jne
+
+ArrayListi ja LinkedListi erinevus
+
+* ArrayList on aeglasem andmete muutmisel, LinkedList andmete muutmisel kiirem
+* ArrayList hoiab andmeid sisemise arrayna ehk näiteks ühe elemendi kustutamisel on vaja liigutada kõiki elemente mälus
+* ArrayList on parem valik andmete hoiustamiseks ja lugemiseks
+* LinkedList on parem valik andmete muutmisel (see tegevus on palju kiirem)
+* Kui pole kindel, kumba vajad, siis on parem võtta aluseks ArrayList, kuna suur andmete liigutamine on ebatõenäolisem kui nende pidev lugemine
+
+Failide lugemine ja kirjutamine
+
+* Failide lugemiseks ja kirjutamiseks on palju erinevaid APIsid: FileReader, BufferedReader, Scanner, FileWriter, BufferedWriter, FileOutputStream jne
+* Erinevate APIdega peab kasutama erinevaid error handle meetodeid, näiteks BufferedReaderit kasutades on vaja klassi definitsiooni lisada "throws IOException"
+* Iga lugemise ja kirjutamise jaoks on vaja eelnevalt importida java.io.*, Scanner API jaoks näiteks java.util.Scanner või java.util.* jne
+* Näiteid BufferedReaderist: read() loeb ühe tähemärgi haaval, readLine() rea kaupa, lines() ridade arvu.
+* Iga kord lõpetades failiga opereerimise tuleks see sulgeda, näiteks BufferedReaderis close() meetodiga

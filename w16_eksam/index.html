@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sõnarakendus</title>
+</head>
+<body>
+    <div id=preSubmit>
+        <textarea name="tekst" id="tekst" cols="80" rows="15"></textarea>
+        <br>
+        <input type="radio" name="vorm" id="koikvormid" value="koikvormid">
+        <label for="koikvormid">Kõik sõnavormid</label>
+        <input type="radio" name="vorm" id="algvormid" value="algvormid">
+        <label for="algvormid">Sõnade algvormid (ainult eesti keeles)</label>
+        <br>
+        <input type="checkbox" name="popular" id="popular" value="popular">
+        <label for="popular">Kuva ainult 20% kõige populaarsematest sõnadest</label>
+        <br>
+        <button id="continue">Jätka</button>
+        <br>
+        <span id="error"></span>
+    </div>
+    <div id="postSubmit">
+        <table id="tabel">
+            <tr>
+                <th class="header">Sõna</th>
+                <th class="header">Kasutuste arv</th>
+                <th class="header">Osakaal</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
